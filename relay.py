@@ -16,6 +16,7 @@ class relay(znc.Module):
             self.PutModule("commands:")
             self.PutModule("help - show this help message")
             self.PutModule("add - add a relay - e.g. add <sourcechannel> <targetnetwork> <targetchannel>")
+            self.PutModule("del - delete a relay - e.g. del <relayid>")
             return self.PutModule("list - list all relays")
 
         if command.startswith("add"):
